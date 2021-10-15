@@ -221,16 +221,69 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-bottom: 60px;
 }
 header .intro-text {
-	padding-top: 350px;
-	padding-bottom: 200px;
+	padding-top: calc(40vh - 82px);
+	padding-bottom: calc(30vh - 82px);
 	text-align: center;
 }
-/* Features Section */
-#features {
-	padding: 100px 0;
+/* when Section */
+#when {
+	padding: 50px 0px 10px;
 	background: var(--taupe-95);
 }
-#features i.fa {
+#when i.fa {
+	font-size: 38px;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	padding: 30px 0;
+	border-radius: 50%;
+	background: var(--taupe-80);
+	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
+}
+/* where Section */
+#where {
+	padding: 50px 0px 0px;
+}
+#where i.fa {
+	font-size: 38px;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	padding: 30px 0;
+	border-radius: 50%;
+	background: var(--taupe-80);
+	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
+}
+/* map Section */
+#map {
+	height: 40vh;
+}
+/* food Section */
+#food {
+	padding: 50px 0px 10px;
+	background: var(--taupe-95);
+}
+#food i.fa {
+	font-size: 38px;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	padding: 30px 0;
+	border-radius: 50%;
+	background: var(--taupe-80);
+	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
+}
+/* gift Section */
+#gift {
+	padding: 50px 0px 0px;
+}
+#gift i.fa {
 	font-size: 38px;
 	margin-bottom: 20px;
 	transition: all 0.5s;
@@ -255,15 +308,7 @@ header .intro-text {
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
-#about h2::after {
-	position: absolute;
-	content: "";
-	background: var(--taupe-80);
-	height: 4px;
-	width: 60px;
-	bottom: 0;
-	left: 0;
-}
+
 #about .about-text li {
 	margin-bottom: 6px;
 	margin-left: 6px;
@@ -288,62 +333,6 @@ header .intro-text {
 #about p {
 	line-height: 24px;
 	margin: 30px 0;
-}
-/* Services Section */
-#services {
-	padding: 100px 0;
-	background: var(--taupe-80);
-	color: #fff;
-}
-#services .service-desc {
-	margin: 10px 10px 20px;
-}
-#services h2 {
-	color: #fff;
-}
-#services .section-title h2::after {
-	position: absolute;
-	content: "";
-	background: rgba(255,255,255,.3);
-	height: 4px;
-	width: 60px;
-	bottom: 0;
-	margin-left: -30px;
-	left: 50%;
-}
-#services i.fa {
-	font-size: 42px;
-	width: 120px;
-	height: 120px;
-	padding: 40px 0;
-	background: var(--taupe-80);
-	border-radius: 50%;
-	color: #fff;
-	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
-}
-#services h3 {
-	font-weight: 500;
-	padding: 5px 0;
-	color: #fff;
-}
-#services p {
-	color: rgba(255,255,255,.75);
-}
-#services .service-desc {
-	margin-bottom: 40px;
-}
-/* Portfolio Section */
-#portfolio {
-	padding: 100px 0;
-}
-.portfolio-item {
-	margin: 1px -15px 0 -14px;
-	padding: 0;
-}
-.portfolio-item .hover-bg {
-	overflow: hidden;
-	position: relative;
-	margin: 0;
 }
 .hover-bg .hover-text {
 	position: absolute;
@@ -376,63 +365,6 @@ header .intro-text {
 }
 .hover-bg:hover .hover-text {
 	opacity: 1;
-}
-/* Testimonials Section */
-#testimonials {
-	padding: 100px 0;
-	background: var(--taupe-95);
-}
-#testimonials i {
-	color: #e6e6e6;
-	font-size: 32px;
-	margin-bottom: 20px;
-}
-.testimonial {
-	position: relative;
-	padding: 20px;
-}
-.testimonial-image {
-	float: left;
-	margin-right: 15px;
-}
-.testimonial-image, .testimonial-image img {
-	display: block;
-	width: 64px;
-	height: 64px;
-	border-radius: 50%;
-}
-.testimonial-content {
-	position: relative;
-	overflow: hidden;
-}
-.testimonial-content p {
-	margin-bottom: 0;
-	font-size: 14px;
-	font-style: italic;
-}
-.testimonial-meta {
-	margin-top: 10px;
-	font-size: 15px;
-	font-weight: 600;
-	color: #666;
-}
-/* Team Section */
-#team {
-	padding: 100px 0;
-}
-#team h4 {
-	margin: 5px 0;
-}
-#team .team-img {
-	width: 240px;
-}
-#team .thumbnail {
-	background: transparent;
-	border: 0;
-}
-#team .thumbnail .caption {
-	padding: 10px 0 0 0;
-	color: #888;
 }
 /* Contact Section */
 #contact {

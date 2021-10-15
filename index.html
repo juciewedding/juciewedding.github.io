@@ -75,8 +75,9 @@
 <div id="when" class="text-center">
   <div class="container">
     <div class="col-md-10 col-md-offset-1 section-title">
-      <h2>The date of our wedding is 27/08/2022</h2>
-      <p></p>
+      <h1><i class="fa fa-calendar"></i></h1>
+      <h2>27/08/2022</h2>
+      <p>Our wedding will take place on 27 August 2022.</p>
     </div>
   </div>
 </div>
@@ -84,73 +85,46 @@
 <div id="where" class="text-center">
   <div class="container">
     <div class="col-md-10 col-md-offset-1 section-title">
-      <h2>We will get married in Těrlicko, CZ</h2>
+      <h1><i class="fa fa-map-marker"></i></h1>
+      <h2>Jaškovská krčma<br>Těrlicko, Czech Republic</h2>
       <p></p>
       <h4>Address:</h4>
       <p>Horní Těrlicko 242<br>735 42 Těrlicko</p>
       <p><a href="https://jaskovskakrcma.cz/">https://jaskovskakrcma.cz/</a></p>
     </div>
   </div>
-  <div id="m" style="height:380px"></div>
+  <div id="map"></div>
   <script type="text/javascript" src="js/map.js"></script>
 </div>
-<!-- About Section -->
-<div id="about">
+<!-- food Section -->
+<div id="food" class="text-center">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-6"> <img src="img/about.jpg" class="img-responsive" alt=""> </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="about-text">
-          <h2>About Us</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <h3>Why Choose Us?</h3>
-          <div class="list-style">
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-              <ul>
-                <li>Lorem ipsum dolor</li>
-                <li>Tempor incididunt</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Incididunt ut labore</li>
-              </ul>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-              <ul>
-                <li>Aliquip ex ea commodo</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Exercitation ullamco</li>
-                <li>Lorem ipsum dolor</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="col-md-10 col-md-offset-1 section-title">
+      <h1><i class="fa fa-cutlery"></i></h1>
+      <h2>Food will be for everyone</h2>
+      <p>Vegan, vegetarian, gluten-free, everyone will find something to eat!</p>
     </div>
   </div>
 </div>
-<!-- Services Section -->
-<div id="services" class="text-center">
+<!-- gift Section -->
+<div id="gift" class="text-center">
   <div class="container">
-    <div class="section-title">
-      <h2>Our Services</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+    <div class="col-md-10 col-md-offset-1 section-title">
+      <h1><i class="fa fa-gift"></i></h1>
+      <h2>We will be more than delighted if you arrive</h2>
+      <p>We will be even more happy if you decide to help us save for our future dream house. Any amount of money will be a big help for us!</p>
+      <p>List included?</p>
     </div>
+  </div>
+</div>
+<!-- About Section -->
+<div id="about" class="text-center">
+  <div class="container">
     <div class="row">
-      <div class="col-md-4"> <i class="fa fa-wordpress"></i>
-        <div class="service-desc">
-          <h3>Lorem ipsum dolor</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-        </div>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-cart-arrow-down"></i>
-        <div class="service-desc">
-          <h3>Consectetur adipiscing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-cloud-download"></i>
-        <div class="service-desc">
-          <h3>Lorem ipsum dolor</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+      <div class="col-xs-12 col-md-12">
+        <div class="about-text section-title">
+          <h2>About Us</h2>
+          <h1>Include some short story?</h1>
         </div>
       </div>
     </div>
@@ -161,7 +135,7 @@
   <div class="container">
     <div class="section-title">
       <h2>Gallery</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+      <p>Include a bunch of pics?</p>
     </div>
     <div class="row">
       <div class="portfolio-items">
@@ -221,7 +195,8 @@
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" id="name" class="form-control" placeholder="Number of people">
+                <input type="number" id="name" class="form-control" placeholder="Number of guests" required="required"
+                        min="1">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -235,37 +210,12 @@
         </form>
       </div>
     </div>
-    <!-- <div class="col-md-3 col-md-offset-1 contact-info">
-      <div class="contact-item">
-        <h3>Contact Info</h3>
-        <p><span><i class="fa fa-map-marker"></i> Address</span>4321 California St,<br>
-          San Francisco, CA 12345</p>
-      </div>
-      <div class="contact-item">
-        <p><span><i class="fa fa-phone"></i> Phone</span> +1 123 456 1234</p>
-      </div>
-      <div class="contact-item">
-        <p><span><i class="fa fa-envelope-o"></i> Email</span> info@company.com</p>
-      </div>
-    </div> -->
-    <!-- <div class="col-md-12">
-      <div class="row">
-        <div class="social">
-          <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
   </div>
 </div>
 <!-- Footer Section -->
 <div id="footer">
   <div class="container text-center">
-    <p>&copy; 2017 Interact. Design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+    <p>&copy; 2021 Vít Jandasek. Based on <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
   </div>
 </div>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
