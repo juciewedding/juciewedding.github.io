@@ -50,8 +50,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#when" class="page-scroll">When</a></li>
-        <li><a href="#where" class="page-scroll">Where</a></li>
+        <li><a href="#when" class="page-scroll"><i class="fa fa-calendar"></i></a></li>
+        <li><a href="#where" class="page-scroll"><i class="fa fa-map-marker"></i></a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -64,8 +64,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 intro-text">
-            <h1>Lucie & Jonathan<span></span></h1>
-            <p>are getting married!</p>
+          </div>
         </div>
       </div>
     </div>
@@ -75,9 +74,29 @@
 <div id="when" class="text-center">
   <div class="container">
     <div class="col-md-10 col-md-offset-1 section-title">
-      <h1><i class="fa fa-calendar"></i></h1>
-      <h2>27/08/2022</h2>
-      <p>Our wedding will take place on 27 August 2022.</p>
+      <h2><i class="fa fa-calendar"></i></h2>
+    </div>
+    <div class="col-md-6 col-md-offset-3 row" id="countdown">
+      <div class="col-md-3">
+        <i class="fa">
+          <span id="ct-days"></span><span id="ct-unit">&nbspd</span>
+        </i>
+      </div>
+      <div class="col-md-3">
+        <i class="fa">
+          <span id="ct-hours"></span><span id="ct-unit">&nbsph</span>
+        </i>
+      </div>
+      <div class="col-md-3">
+        <i class="fa">
+          <span id="ct-minutes"></span><span id="ct-unit">&nbsph</span>
+        </i>
+      </div>
+      <div class="col-md-3">
+        <i class="fa">
+          <span id="ct-seconds"></span><span id="ct-unit">&nbsps</span>
+        </i>
+      </div>
     </div>
   </div>
 </div>
@@ -86,129 +105,51 @@
   <div class="container">
     <div class="col-md-10 col-md-offset-1 section-title">
       <h1><i class="fa fa-map-marker"></i></h1>
-      <h2>Jaškovská krčma<br>Těrlicko, Czech Republic</h2>
-      <p></p>
-      <h4>Address:</h4>
+      <h2>Jaškovská krčma<br>Těrlicko</h2>
       <p>Horní Těrlicko 242<br>735 42 Těrlicko</p>
       <p><a href="https://jaskovskakrcma.cz/">https://jaskovskakrcma.cz/</a></p>
     </div>
-  </div>
-  <div id="map"></div>
-  <script type="text/javascript" src="js/map.js"></script>
-</div>
-<!-- food Section -->
-<div id="food" class="text-center">
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1 section-title">
-      <h1><i class="fa fa-cutlery"></i></h1>
-      <h2>Food will be for everyone</h2>
-      <p>Vegan, vegetarian, gluten-free, everyone will find something to eat!</p>
+    <div class="row col-md-10 col-md-offset-1">
+      <div class="where-items">
+        <div class="col-md-6">
+          <div class="where-item">
+            <a href="https://jaskovskakrcma.cz/wp-content/uploads/2020/01/IGP8478.jpg" data-lightbox-gallery="gallery1">
+              <img src="https://jaskovskakrcma.cz/wp-content/uploads/2020/01/IGP8478.jpg" class="img-thumbnail">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="where-item">
+            <a href="https://jaskovskakrcma.cz/wp-content/uploads/2015/05/home3.jpg" data-lightbox-gallery="gallery1">
+              <img src="https://jaskovskakrcma.cz/wp-content/uploads/2015/05/home3.jpg" class="img-thumbnail">
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<!-- gift Section -->
-<div id="gift" class="text-center">
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1 section-title">
-      <h1><i class="fa fa-gift"></i></h1>
-      <h2>We will be more than delighted if you arrive</h2>
-      <p>We will be even more happy if you decide to help us save for our future dream house. Any amount of money will be a big help for us!</p>
-      <p>List included?</p>
-    </div>
+  <div id="map">
+    <script type="text/javascript" src="js/map.js"></script>
   </div>
 </div>
 <!-- About Section -->
-<div id="about" class="text-center">
+<div id="about">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-12">
-        <div class="about-text section-title">
+        <div class="about-text section-title text-center">
           <h2>About Us</h2>
-          <h1>Include some short story?</h1>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Section -->
-<div id="portfolio" class="text-center">
-  <div class="container">
-    <div class="section-title">
-      <h2>Gallery</h2>
-      <p>Include a bunch of pics?</p>
     </div>
     <div class="row">
-      <div class="portfolio-items">
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Lorem Ipsum</h4>
-              </div>
-              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
+        <div class="col-md-6">
+            <img src="img/about.jpg">
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Adipiscing Elit</h4>
-              </div>
-              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
+        <div class="col-md-6">
+            Hello Yello random text.
+            Look at my bf, my bf is amazing.
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Lorem Ipsum</h4>
-              </div>
-              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Contact Section -->
-<div id="contact" class="text-center">
-  <div class="container">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="row">
-        <div class="section-title">
-          <h2>Let us know you are coming!</h2>
-          <p>We will be glad to have you at our wedding - just please let us know you are coming!</p>
-        </div>
-        <form name="sentMessage" id="contactForm" novalidate>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="number" id="name" class="form-control" placeholder="Number of guests" required="required"
-                        min="1">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Short Message for us" required></textarea>
-            <p class="help-block text-danger"></p>
-          </div>
-          <div id="success"></div>
-          <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
-        </form>
-      </div>
     </div>
   </div>
 </div>
@@ -225,6 +166,7 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/countdown.js"></script> 
 
 </body>
 </html>
