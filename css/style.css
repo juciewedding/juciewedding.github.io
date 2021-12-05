@@ -1,5 +1,5 @@
 :root {
-	--taupe-80: #9A776A;
+	--taupe-80: #AE9780;
 	--antique-white-90: antiquewhite;
 	--antique-white-95: linen;
 	--ivory-1: white;
@@ -17,7 +17,7 @@ body, html {
 	height: 100% !important;
 }
 h2, h3, h4 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Playfair Display', serif;
 }
 h2 {
 	margin: 0 0 20px 0;
@@ -148,13 +148,10 @@ hr {
 	content: "";
 	background: var(--taupe-80);
 	height: 4px;
-	width: 60px;
+	width: 240px;
 	bottom: 0;
-	margin-left: -30px;
+	margin-left: -120px;
 	left: 50%;
-}
-#when .section-title h2::after {
-	background: none;
 }
 .section-title p {
 	font-size: 18px;
@@ -189,6 +186,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+#wrapper {
+  background: url(../img/old-barn-wall-wood-background.jpg) top center repeat;
+  background-size: contain;
+}
 /* Header Section */
 .intro {
 	display: table;
@@ -208,7 +209,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-family: 'Playfair Display', sans-serif;
 	color: #fff;
 	font-size: 82px;
-	margin-top: 0;
+	/* margin-top: 0; */
 	margin-bottom: 10px;
 }
 .intro h1 span {
@@ -231,24 +232,27 @@ header .intro-text {
 /* when Section */
 #when {
 	padding: 50px 0px 10px;
-	background: var(--antique-white-95);
+	/* background: var(--antique-white-95); */
 }
-#when i.fa {
-	font-size: 38px;
-	margin-bottom: 20px;
+#countdown {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+#when i.ct {
+	/* font-size: 68px; */
 	transition: all 0.5s;
-	color: #fff;
+	color: #333;
 	width: 100px;
 	height: 100px;
 	padding: 30px 0;
 	border-radius: 50%;
-	background: var(--taupe-80);
-	box-shadow: 10px 10px 10px rgba(0,0,0,.1);
-    /* border-style: solid;
-    border-width: medium; */
 }
-#countdown i.fa {
-	font-family: 'Montserrat', sans-serif;
+#when h1 {
+  font-size: 500%;
+}
+#countdown i.ct {
+	font-family: 'Playfair Display';
+  font-style: normal;
 }
 #ct-unit {
 	font-size: 0.5em;
@@ -257,7 +261,7 @@ header .intro-text {
 /* where Section */
 #where {
 	padding: 50px 0px 0px;
-    background: var(--ivory-1);
+  /* background: var(--ivory-1); */
 }
 #where i.fa {
 	font-size: 38px;
@@ -271,9 +275,25 @@ header .intro-text {
 	background: var(--taupe-80);
 	box-shadow: 10px 10px 10px rgba(0,0,0,.1);
 }
+
+#about i.fa-wrap {
+	font-size: 38px;
+	transition: all 0.5s;
+	color: #fff;
+  height: 100px;
+	border-radius: 50%;
+	background: var(--taupe-80);
+	box-shadow: 10px 10px 10px rgba(0,0,0,.1);
+}
+/* #about i.fa {
+  width: 50px;
+  margin-bottom: 20px;
+  padding: 30px 0;
+} */
 /* map Section */
 #map {
 	height: 40vh;
+  padding-right: 200px;
 }
 
 .where-item {
@@ -333,7 +353,7 @@ header .intro-text {
 /* About Section */
 #about {
 	padding: 100px 0;
-	background: #f6f6f6;
+	/* background: #f6f6f6; */
 }
 #about h3 {
 	font-size: 22px;
@@ -360,7 +380,7 @@ header .intro-text {
 	padding-right: 8px;
 }
 #about img {
-	width: 520px;
+	max-width: 100%;
 	margin-top: 10px;
 	background: #fff;
 	border-right: 0;
@@ -529,7 +549,7 @@ color: #777;
 }
 /* Footer Section*/
 #footer {
-	background: var(--antique-white-95);
+	background: #fff;
 	padding: 30px 0;
 }
 #footer p {
@@ -541,6 +561,12 @@ color: #777;
 }
 #footer a:hover {
 	border-bottom: 2px solid var(--taupe-80);
+}
+
+#bg-paper
+{
+  background: #fff;
+  box-shadow: 0 0 20px 3px #333, 0 0 5px #BBA895 inset;
 }
 
 @media (max-width: 768px) {

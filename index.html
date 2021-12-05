@@ -27,6 +27,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Corinthia&display=swap" rel="stylesheet">
 <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
 <script type="text/javascript">Loader.load();</script>
 
@@ -52,6 +53,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#when" class="page-scroll"><i class="fa fa-calendar"></i></a></li>
         <li><a href="#where" class="page-scroll"><i class="fa fa-map-marker"></i></a></li>
+        <li><a href="#about" class="page-scroll"><i class="fa fa-female"></i><i class="fa fa-male"></i></a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -70,93 +72,96 @@
     </div>
   </div>
 </header>
-<!-- When Section -->
-<div id="when" class="text-center">
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1 section-title">
-      <h2><i class="fa fa-calendar"></i></h2>
-    </div>
-    <div class="col-md-6 col-md-offset-3 row" id="countdown">
-      <div class="col-md-3">
-        <i class="fa">
-          <span id="ct-days"></span><span id="ct-unit">&nbspd</span>
-        </i>
-      </div>
-      <div class="col-md-3">
-        <i class="fa">
-          <span id="ct-hours"></span><span id="ct-unit">&nbsph</span>
-        </i>
-      </div>
-      <div class="col-md-3">
-        <i class="fa">
-          <span id="ct-minutes"></span><span id="ct-unit">&nbsph</span>
-        </i>
-      </div>
-      <div class="col-md-3">
-        <i class="fa">
-          <span id="ct-seconds"></span><span id="ct-unit">&nbsps</span>
-        </i>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Where Section -->
-<div id="where" class="text-center">
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1 section-title">
-      <h1><i class="fa fa-map-marker"></i></h1>
-      <h2>Jaškovská krčma<br>Těrlicko</h2>
-      <p>Horní Těrlicko 242<br>735 42 Těrlicko</p>
-      <p><a href="https://jaskovskakrcma.cz/">https://jaskovskakrcma.cz/</a></p>
-    </div>
-    <div class="row col-md-10 col-md-offset-1">
-      <div class="where-items">
-        <div class="col-md-6">
-          <div class="where-item">
-            <a href="https://jaskovskakrcma.cz/wp-content/uploads/2020/01/IGP8478.jpg" data-lightbox-gallery="gallery1">
-              <img src="https://jaskovskakrcma.cz/wp-content/uploads/2020/01/IGP8478.jpg" class="img-thumbnail">
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="where-item">
-            <a href="https://jaskovskakrcma.cz/wp-content/uploads/2015/05/home3.jpg" data-lightbox-gallery="gallery1">
-              <img src="https://jaskovskakrcma.cz/wp-content/uploads/2015/05/home3.jpg" class="img-thumbnail">
-            </a>
-          </div>
+
+<div id="wrapper">
+  <!-- When Section -->
+  <div id="when" class="text-center">
+    <div class="container" id="bg-paper">
+      <div class="col-xs-12 col-md-12">
+        <div class="col-xs-10 col-md-10 col-md-offset-1 row" id="countdown">
+          <h1>
+            <div class="col-md-3">
+              <i class="ct">
+                <span id="ct-days"></span><span id="ct-unit">&nbspd</span>
+              </i>
+            </div>
+            <div class="col-md-3">
+              <i class="ct">
+                <span id="ct-hours"></span><span id="ct-unit">&nbsph</span>
+              </i>
+            </div>
+            <div class="col-md-3">
+              <i class="ct">
+                <span id="ct-minutes"></span><span id="ct-unit">&nbspm</span>
+              </i>
+            </div>
+            <div class="col-md-3">
+              <i class="ct">
+                <span id="ct-seconds"></span><span id="ct-unit">&nbsps</span>
+              </i>
+            </div>
+          </h1>
         </div>
       </div>
     </div>
   </div>
-  <div id="map">
-    <script type="text/javascript" src="js/map.js"></script>
+  <!-- Where Section -->
+  <div id="where" class="text-center">
+    <div id="bg-paper" class="container">
+      <div class="col-md-10 col-md-offset-1 section-title">
+        <h1><i class="fa fa-map-marker"></i></h1>
+        <h2>Jaškovská krčma<br>Těrlicko</h2>
+        <p>Horní Těrlicko 242<br>735 42 Těrlicko</p>
+        <p><a href="https://jaskovskakrcma.cz/">https://jaskovskakrcma.cz/</a></p>
+      </div>
+      <div class="row col-md-10 col-md-offset-1">
+        <div class="where-items">
+          <div class="col-md-6">
+            <div class="where-item">
+              <a href="https://jaskovskakrcma.cz/wp-content/uploads/2020/01/IGP8478.jpg" data-lightbox-gallery="gallery1">
+                <img src="https://jaskovskakrcma.cz/wp-content/uploads/2020/01/IGP8478.jpg" class="img-thumbnail">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="where-item">
+              <a href="https://jaskovskakrcma.cz/wp-content/uploads/2015/05/home3.jpg" data-lightbox-gallery="gallery1">
+                <img src="https://jaskovskakrcma.cz/wp-content/uploads/2015/05/home3.jpg" class="img-thumbnail">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="map">
+        <script type="text/javascript" src="js/map.js"></script>
+      </div>
+    </div>
   </div>
-</div>
-<!-- About Section -->
-<div id="about">
-  <div class="container">
-    <div class="row">
+  <!-- About Section -->
+  <div id="about">
+    <div id="bg-paper" class="container">
       <div class="col-xs-12 col-md-12">
         <div class="about-text section-title text-center">
+          <h1><i class="fa fa-female"></i><i class="fa fa-male"></i></h1>
           <h2>About Us</h2>
         </div>
       </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <img src="img/about.jpg">
-        </div>
-        <div class="col-md-6">
-            Hello Yello random text.
-            Look at my bf, my bf is amazing.
-        </div>
+      <div class="row">
+          <div class="col-md-6">
+              <img class="float-left" src="img/about.jpg">
+          </div>
+          <div class="col-md-6">
+              Hello Yello random text.
+              Look at my bf, my bf is amazing.
+          </div>
+      </div>
     </div>
   </div>
 </div>
 <!-- Footer Section -->
 <div id="footer">
   <div class="container text-center">
-    <p>&copy; 2021 Vít Jandasek. Based on <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+    <p>&copy; 2021 VJ. Based on <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
   </div>
 </div>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
