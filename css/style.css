@@ -151,6 +151,9 @@ hr {
 	margin-left: -120px;
 	left: 50%;
 }
+#address {
+  margin-bottom: 30px;
+}
 .section-title p {
 	font-size: 18px;
 }
