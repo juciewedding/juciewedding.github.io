@@ -33,11 +33,16 @@ function main() {
   });
 	
 	
-    // Nivo Lightbox 
-    $('.where-item a').nivoLightbox({
-            effect: 'slideDown',  
-            keyboardNav: true,                            
-        });
+  // Nivo Lightbox 
+  $('.where-item a').nivoLightbox({
+          effect: 'slideDown',  
+          keyboardNav: true,                            
+      });
+  // Nivo Lightbox 
+  $('.food-item a').nivoLightbox({
+          effect: 'slideDown',  
+          keyboardNav: true,                            
+      });
 		
 }());
 
