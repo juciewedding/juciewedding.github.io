@@ -352,6 +352,26 @@ hr {
   max-width: 100%;
 }
 
+/* dict Section */
+#dict {
+	padding: 50px 0px 10px;
+}
+#dict i.fa {
+	font-size: 38px;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	padding: 30px 0;
+	border-radius: 50%;
+	background: var(--taupe-80);
+	box-shadow: 10px 10px 10px rgba(0,0,0,.1);
+}
+#dict div.row {
+  padding-bottom: 20px;
+}
+
 /* clothes Section */
 #clothes {
 	padding: 50px 0px 10px;

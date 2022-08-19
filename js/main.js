@@ -43,6 +43,10 @@ function main() {
           effect: 'slideDown',  
           keyboardNav: true,                            
       });
+  $('.dict-item a').nivoLightbox({
+    effect: 'slideDown',  
+    keyboardNav: true,                            
+});
 		
 }());
 
