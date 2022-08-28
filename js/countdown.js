@@ -19,7 +19,10 @@ var x = setInterval(function countdown() {
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+        days = 0;
+        hours = 0;
+        minutes = 0;
+        seconds = 0;
     } else {
         days = Math.floor(distance / (1000 * 60 * 60 * 24));
         hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -39,7 +42,6 @@ var x = setInterval(function countdown() {
 
     countdownEl = document.getElementById("ct-seconds")
     countdownEl.innerHTML = seconds
-
 
     return countdown;
 }(), 1000);
